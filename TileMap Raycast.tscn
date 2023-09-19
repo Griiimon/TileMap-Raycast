@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3p7dplca7owp"]
+
+[ext_resource type="Script" path="res://TileMap Raycast.gd" id="1_aufn4"]
+
+[node name="TileMap Raycast" type="Node2D" node_paths=PackedStringArray("tile_map")]
+position = Vector2(440, 125)
+script = ExtResource("1_aufn4")
+target_position = Vector2(0, 100)
+tile_map = NodePath("")
+metadata/_edit_group_ = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 0)
